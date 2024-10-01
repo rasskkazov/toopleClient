@@ -1,0 +1,45 @@
+@import "../main.scss";
+
+.footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: auto;
+    padding: 1.6rem 0;
+    font-size: 2rem;
+
+    @include --tablet {
+        gap: 1.6rem;
+        font-size: 1.6rem;
+    }
+
+    span {
+        font-family: NunitoSans, sans-serif;
+    }
+
+    hr {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        opacity: 0.2;
+    }
+
+    &__logo {
+        img {
+            max-width: 9rem;
+        }
+
+        margin-bottom: 1.6rem;
+    }
+
+    &__contacts {
+        display: flex;
+        gap: 1.6rem;
+        justify-content: flex-end;
+        margin-top: 1.6rem;
+        font-weight: 500;
+        font-family: NunitoSans, sans-serif;
+    }
+}

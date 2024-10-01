@@ -1,0 +1,29 @@
+@import "../main.scss";
+
+.course-card {
+    width: 27.4rem;
+    border-radius: 3rem;
+    box-shadow: 3px 2px 2px 0 rgb(0 0 0 / 60%);
+
+    &__top {
+        height: 10rem;
+        padding: 2.4rem 0.8rem;
+        overflow: hidden;
+        color: $white;
+        font-weight: 700;
+        font-size: 2rem;
+        background: linear-gradient(102deg, #51a9da -9.42%, #57bef7 100%);
+        border-radius: 3rem 3rem 0 0;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 7.2rem;
+        padding: 1.6rem 0.8rem;
+        overflow: hidden;
+        font-weight: 500;
+        font-size: 1.6rem;
+    }
+}

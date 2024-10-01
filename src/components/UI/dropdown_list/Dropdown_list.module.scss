@@ -1,0 +1,61 @@
+@import "../../../main.scss";
+
+.dropdown {
+    &__btn {
+        display: flex;
+        gap: 3.2rem;
+        align-items: center;
+        width: 100%;
+        padding: 1.6rem;
+        font-size: 1.6rem;
+        text-align: left;
+        background-color: $white;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__chevron {
+        transition: 0.2s;
+    }
+
+    &.open &__chevron {
+        transform: rotate(90deg);
+    }
+
+    &__counter {
+        margin-left: auto;
+    }
+
+    &__doersList {
+        position: relative;
+        display: grid;
+        grid-template-rows: 0fr;
+        overflow: hidden;
+        transition: 0.2s;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+
+        li {
+            padding-left: 10%;
+        }
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 8.4%;
+            width: 1px;
+            height: 100%;
+            background-color: $black;
+            opacity: 0.3;
+            content: "";
+        }
+    }
+
+    &.open &__doersList {
+        grid-template-rows: 1fr;
+    }
+}

@@ -1,0 +1,19 @@
+@import "../main.scss";
+
+.addCourseForm {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    align-items: center;
+    width: 35.2rem;
+    padding: 3.2rem;
+    background-color: $white;
+    border-radius: 1rem;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        width: 100%;
+    }
+}

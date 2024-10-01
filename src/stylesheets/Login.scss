@@ -1,0 +1,64 @@
+@import "../main.scss";
+
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    align-items: center;
+    width: 36.8rem;
+    margin: 3.2rem auto 6.4rem;
+    padding: 3.2rem 6rem;
+    font-size: 2rem;
+    border: 1px solid $grey;
+    border-radius: 3rem;
+
+    &__title {
+        color: $primary;
+        font-weight: 600;
+        font-size: 3.5rem;
+
+        span {
+            color: $accent;
+            font-family: DaysOne, sans-serif;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        width: 28rem;
+
+        label {
+            font-weight: 500;
+        }
+
+        input[type="submit"] {
+            height: 4rem;
+            margin-top: 1.6rem;
+            color: $white;
+            font-size: 2rem;
+            background-color: $primary;
+            border: none;
+            border-radius: 0.8rem;
+            transition: 0.1s;
+
+            @include hover {
+                transform: translateY(-2px);
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__or {
+        font-weight: 500;
+    }
+
+    &__signup {
+        font-size: 2rem;
+        text-decoration: underline;
+        background-color: $white;
+        border: none;
+        cursor: pointer;
+    }
+}

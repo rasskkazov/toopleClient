@@ -1,0 +1,32 @@
+@import "../main.scss";
+
+.completed {
+    &__courseName {
+        font-weight: 700;
+        font-size: 2.4rem;
+    }
+
+    &__teacher {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    &__tasks {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        width: 100%;
+        padding: 1.6rem;
+    }
+
+    &__task {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__taskName {
+        max-width: 59.2rem;
+        text-wrap: wrap;
+    }
+}

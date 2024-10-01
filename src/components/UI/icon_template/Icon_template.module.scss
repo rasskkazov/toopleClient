@@ -1,0 +1,26 @@
+@import "../../../main.scss";
+
+.iconTemplate {
+    display: flex;
+    gap: 0.8rem;
+
+    .circle {
+        width: 4rem;
+        height: 4rem;
+        padding: 0.9rem;
+        background-color: $secondary;
+        border-radius: 8rem;
+    }
+
+    .icon {
+        img {
+            width: 2.2rem;
+        }
+    }
+
+    .counter {
+        font-size: 2rem;
+        font-family: NunitoSans, sans-serif;
+        text-align: center;
+    }
+}

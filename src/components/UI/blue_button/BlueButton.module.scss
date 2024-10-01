@@ -1,0 +1,19 @@
+@import "../../../main.scss";
+
+.blueButton {
+    padding: 0.8rem 1.6rem;
+    color: $black;
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: Raleway, sans-serif;
+    background-color: $secondary;
+    border: none;
+    border-radius: 0.8rem;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 60%);
+    cursor: pointer;
+    transition: 0.1s;
+
+    @include hover {
+        transform: translateY(-1px);
+    }
+}

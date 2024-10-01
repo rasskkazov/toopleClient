@@ -1,0 +1,54 @@
+@import "../main.scss";
+
+.about {
+    position: relative;
+
+    p {
+        font-size: 3rem;
+        line-height: 130%;
+        text-align: center;
+    }
+
+    &__first,
+    &__second,
+    &__third {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 3.2rem;
+    }
+
+    &__second {
+        flex-direction: row-reverse;
+    }
+
+    .red {
+        color: $accent;
+        font-weight: 600;
+    }
+
+    .blue {
+        color: $primary;
+        font-weight: 600;
+    }
+
+    .empty_red {
+        color: $accent;
+        font-family: DaysOne, sans-serif;
+    }
+
+    .empty_blue {
+        color: $primary;
+        font-weight: 700;
+    }
+
+    picture {
+        @include --mobile {
+            display: none;
+        }
+
+        img {
+            height: 20.8rem;
+        }
+    }
+}
